@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Kalkulator Suhu</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h3>
+      Masukan Suhu derajat Celcius ke kotak dibawah,
+      <br/>
+      lalu klik tombol Konversi untuk mendapakan hasil
+      <br/>
+      konversi dalam bentuk Fahrenheit
+    </h3>
+    <form id="temperature-form-1">
+      <label for="temperature" id="label-1">Celcius</label>
+      <input type="number" id="temperature" placeholder="Masukkan suhu" required>
+      <button type="submit" id="convert-btn">Konversi</button>
+      <button type="button" id="reset-btn">Reset</button>
+      <button type="button" id="reverse-btn">Reverse</button>
+    </form>
+    <form id="temperature-form-2">
+      <label for="temperature" id="label-2">Fahrenheit</label>
+      <input type="number" disabled id="temperature-2" placeholder="result" required>
+    </form>
+    <div id="conversion-result" class="hidden">
+      <p id="result">Cara Kalkulasi: </p>
+      <input type="text" id="formula" disabled required>
+    </div>
+    <div id="conversion-explanation-1" class="hidden">
+      <h3>
+        Rumus Celcius ke Fahrenheit
+      </h3>
+      <b>
+        Secara umum, rumus Celcius ke Fahrenheit adalah sebagai berikut:
+      </b>
+      <p>
+        °F = (9/5 x °C) + 32.
+      </p>
+    </div>
+    <div id="conversion-explanation-2" class="hidden">
+      <h3>
+        Rumus Fahrenheit ke Celcius
+      </h3>
+      <b>
+        Secara umum, rumus Celcius ke Fahrenheit adalah sebagai berikut:
+      </b>
+      <p>
+        °C = 5/9 x (°F – 32).
+      </p>
+    </div>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
